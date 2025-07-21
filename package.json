@@ -1,0 +1,37 @@
+{
+  "name": "@julesmons/rsbuild-plugin-vfd",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "source": "./src/ts/index.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "types": "./dist/types/index.d.ts",
+  "source": "./src/ts/index.ts",
+  "module": "./dist/index.js",
+  "main": "./dist/index.cjs",
+  "files": [
+    "README.md",
+    "LICENSE",
+    "dist"
+  ],
+  "scripts": {
+    "prepack": "rslib build",
+    "build": "rslib build",
+    "dev": "rslib build --watch",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "@rsbuild/core": ">=1.0.0"
+  },
+  "devDependencies": {
+    "@rslib/core": "^0.10.6",
+    "@types/node": "^22.16.4",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}

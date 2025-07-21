@@ -1,0 +1,55 @@
+{
+  "typescript": {
+    "indentWidth": 4,
+    "semiColons": "always",
+    "lineWidth": 120,
+    "quoteStyle": "preferDouble",
+    "quoteProps": "consistent",
+    "useBraces": "always",
+    "singleBodyPosition": "nextLine",
+    "nextControlFlowPosition": "nextLine",
+    "trailingCommas": "never",
+    "importDeclaration.sortTypeOnlyImports": "first",
+    "exportDeclaration.sortTypeOnlyExports": "first",
+    "ifStatement.padding.top": 1,
+    "functionDeclaration.padding.top": 1,
+    "functionExpression.padding.top": 1,
+    "arrowFunction.padding.top": 1,
+    "classDeclaration.padding.top": 1,
+    "classExpression.padding.top": 1,
+    "method.padding.top": 1,
+    "constructor.padding.top": 1,
+    "forStatement.padding.top": 1,
+    "forInStatement.padding.top": 1,
+    "forOfStatement.padding.top": 1,
+    "whileStatement.padding.top": 1,
+    "doWhileStatement.padding.top": 1,
+    "switchStatement.padding.top": 1,
+    "switchCase.padding.top": 0,
+    "tryStatement.padding.top": 1,
+    "catchClause.padding.top": 1,
+    "finallyClause.padding.top": 1,
+    "blockStatement.padding.top": 1,
+    "enumDeclaration.padding.top": 1,
+    "interfaceDeclaration.padding.top": 1,
+    "moduleDeclaration.padding.top": 1,
+    "objectLiteral.padding.top": 0,
+    "arrayLiteral.padding.top": 0,
+    "staticBlock.padding.top": 1
+  },
+  "json": {
+    "trailingCommas": "never"
+  },
+  "excludes": [
+    "**/node_modules",
+    "**/dist",
+    "**/*-lock.{yaml,json}",
+    "**/bun.lock"
+  ],
+  "plugins": [
+    "https://julesmons.github.io/dprint-plugin-typescript/dprint_plugin_typescript.wasm",
+    "https://plugins.dprint.dev/json-0.20.0.wasm",
+    "https://plugins.dprint.dev/markdown-0.18.0.wasm",
+    "https://plugins.dprint.dev/g-plane/pretty_yaml-v0.5.0.wasm"
+  ]
+}

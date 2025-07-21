@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    /* Base Options: */
+    "composite": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true,
+    "allowImportingTsExtensions": true,
+    /* Strictness: */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    /* Preferences: */
+    "strictPropertyInitialization": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    /* Language Features: */
+    "lib": ["ES2021"],
+    /* Bundler - Input: */
+    "baseUrl": ".",
+    "rootDir": "./src/ts",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    /* Bundler - Compilation: */
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    /* Bundler - Output: */
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "declarationDir": "./dist/types"
+  },
+  "include": [
+    "./src/ts/**/*.ts",
+    "./src/ts/**/*.tsx",
+    "./src/ts/**/*.d.ts",
+    "./src/ts/**/*.js",
+    "./src/ts/**/*.jsx",
+    "./src/ts/**/*.json"
+  ]
+}
