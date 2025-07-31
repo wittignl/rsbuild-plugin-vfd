@@ -1,7 +1,8 @@
 {
-  "name": "@julesmons/rsbuild-plugin-vfd",
-  "version": "1.0.0-beta.1",
+  "name": "@wittignl/rsbuild-plugin-vfd",
+  "version": "1.0.0",
   "type": "module",
+  "packageManager": "pnpm@10.13.1",
   "exports": {
     ".": {
       "types": "./dist/types/index.d.ts",
@@ -20,6 +21,7 @@
     "dist"
   ],
   "scripts": {
+    "release": "semantic-release",
     "prepack": "rslib build",
     "build": "rslib build",
     "dev": "rslib build --watch",
@@ -30,7 +32,11 @@
   },
   "devDependencies": {
     "@rslib/core": "^0.10.6",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "@types/node": "^22.16.4",
+    "conventional-changelog-conventionalcommits": "^9.1.0",
+    "semantic-release": "^24.2.7",
     "typescript": "^5.8.3",
     "vitest": "^3.2.4"
   }
